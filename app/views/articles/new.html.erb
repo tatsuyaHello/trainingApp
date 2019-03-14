@@ -1,0 +1,22 @@
+<div class="container">
+	<%= form_with(model: @article, local: true) do |form| %>
+
+		<div class="field">
+			<%= form.label :title, "タイトル" %>
+			<%= form.text_field :title, placeholder: "タイトルを入力してね" %>
+		</div>
+
+		<div class="field">
+			<%= form.label :content, "記事内容" %>
+			<%= form.text_area :content, placeholder: "内容を入力してね" %>
+		</div>
+
+		<div>
+			<%= form.hidden_field :user_id, value: current_user.id %>
+		</div>
+
+		<div class="actions">
+			<%= form.submit %>
+		</div>
+	<% end %>
+</div>

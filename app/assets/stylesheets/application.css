@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.header-left{
+	font-size: 24px;
+	float: left;	
+}
+
+.header-left span{
+	color: blue;
+}
+
+.header-right{
+	color: gray;
+	float: right;
+}
+
+.header-right li{
+	padding-right: 20px;
+	display: inline-block;
+}
+
+ul{
+	list-style: none;
+}
+
+/* 記事ページ */
+#article-list div{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+#article-list div #article-title{
+	padding-top: 20px;
+	display: block;
+}
+
+#article-list div #article-created_at{
+	color: gray;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+}
+
+.container{
+	padding: 30px 20px;
+}
+
+.field{
+	padding-bottom: 20px;
+}
+
+h2{
+	padding-top: 20px;
+	clear: left;
+}
+
+/* 記事詳細ページ */
+
+
+/* ユーザページ */
