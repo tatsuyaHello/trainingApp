@@ -106,3 +106,16 @@ h2{
 
 
 /* ユーザページ */
+
+/* フラッシュ */
+.alert{
+	color: black;
+	background-color: red;
+	text-align: center;
+}
+
+.notice{
+	color: black;
+	background-color: aquamarine;
+	text-align: center;
+}
