@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.save
     redirect_to root_path
+    flash[:notice] = "You created article."
   end
 
   def show
@@ -22,12 +23,15 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    flash[:notice] = "You edited article."
   end
 
   def update
+    flash[:notice] = "You updated article."
   end
 
   def destroy
+    flash[:notice] = "You destroyed article."
   end
 
   private
